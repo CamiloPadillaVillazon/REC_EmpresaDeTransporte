@@ -30,6 +30,12 @@ def create_app() -> Flask:
 
 app = create_app()
 
+# Configuración recomendada para producción en Render (servir archivos estáticos con WhiteNoise)
+try:
+    from whitenoise import WhiteNoise
+    app.wsgi_app = WhiteNoise(app.wsgi_app, root='static/', prefix='static/')
+except ImportError:
+    pass
 
 if __name__ == "__main__":
     from waitress import serve
