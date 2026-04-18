@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+
+{% block title %}REC | Transporte Empresarial Moderno{% endblock %}
+
+{% block content %}
+<!-- Hero section -->
+<section id="inicio" class="hero-section d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-xl-9 col-lg-10">
+                <h1 class="hero-title mb-2">Tu <span class="hero-accent">mercancia</span> en las mejores manos</h1>
+                <p class="hero-subtitle mb-4">Nacional e internacional</p>
+                <div class="transport-modes reveal-on-scroll mb-4">
+                    <div class="mode-item">
+                        <span class="mode-icon"><i class="bi bi-truck"></i></span>
+                        <span class="mode-label">TERRESTRE</span>
+                    </div>
+                </div>
+                <a href="{{ url_for('servicios') }}" class="btn btn-brand hero-cta">Ver servicios</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services section -->
+<section id="servicios" class="section-space services-section bg-white text-center">
+    <div class="container">
+        <div class="section-head mb-5 reveal-on-scroll">
+            <h2 class="fw-bold fw-bolder mb-3 text-white bg-primary-red py-3 text-uppercase">Somos el aliado que agrega valor a tu negocio</h2>
+        </div>
+
+        <div class="row g-4 mt-2 justify-content-center">
+            <!-- Transporte de Carga -->
+            <div class="col-md-4">
+                <article class="service-card reveal-on-scroll h-100 flex-column d-flex">
+                    <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=600&q=80" alt="Transporte de Carga" class="img-fluid rounded mb-3 service-img">
+                    <h3 class="h5 fw-bold mb-3">Transporte de Carga</h3>
+                    <p class="service-desc flex-grow-1">Movilización segura de carga general y especializada con trazabilidad de extremo a extremo en todo el territorio.</p>
+                    <a href="{{ url_for('servicios') }}#carga" class="btn btn-brand w-100 mt-2">MÁS INFORMACIÓN</a>
+                </article>
+            </div>
+            <!-- Logística Programada -->
+            <div class="col-md-4">
+                <article class="service-card reveal-on-scroll h-100 flex-column d-flex">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c80a30?w=600&q=80" alt="Logística Programada" class="img-fluid rounded mb-3 service-img">
+                    <h3 class="h5 fw-bold mb-3">Logística Programada</h3>
+                    <p class="service-desc flex-grow-1">Planificación de rutas y ventanas de entrega para operaciones de alto volumen de acuerdo a las exigencias de tu empresa.</p>
+                    <a href="{{ url_for('servicios') }}#logistica" class="btn btn-brand w-100 mt-2">MÁS INFORMACIÓN</a>
+                </article>
+            </div>
+            <!-- Distribución Urbana -->
+            <div class="col-md-4">
+                <article class="service-card reveal-on-scroll h-100 flex-column d-flex">
+                    <img src="https://images.unsplash.com/photo-1605705663738-9dd0932a76f2?w=600&q=80" alt="Distribución Urbana" class="img-fluid rounded mb-3 service-img">
+                    <h3 class="h5 fw-bold mb-3">Distribución Urbana</h3>
+                    <p class="service-desc flex-grow-1">Última milla corporativa con control de entregas, seguimiento constante y reportes operativos precisos.</p>
+                    <a href="{{ url_for('servicios') }}#distribucion" class="btn btn-brand w-100 mt-2">MÁS INFORMACIÓN</a>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About section -->
+<section id="nosotros" class="section-space about-section">
+    <div class="container">
+        <h2 class="text-center fw-bold fs-2 mb-5 reveal-on-scroll about-title">Sobre nosotros</h2>
+        <div class="row align-items-center g-5 justify-content-center">
+            <div class="col-lg-6 col-md-10 reveal-on-scroll">
+                <img src="https://images.unsplash.com/photo-1621876527584-307eb8b1cf6f?w=800&q=80" class="img-fluid rounded shadow w-100 about-huge-img" alt="Operaciones logísticas R.E.C. SRL">
+            </div>
+            <div class="col-lg-6 col-md-10 reveal-on-scroll">
+                <div class="about-text-wrap ps-lg-4">
+                    <h3 class="fw-bold mb-3 fs-4 text-dark-blue">Nuestra Misión</h3>
+                    <p class="mb-4">
+                        Fidelizar a nuestros clientes, proveedores y nuestro talento humano,
+                        a través de la eficiencia, experiencia y capacitación continua,
+                        trabajando siempre de forma segura y transparente en todos
+                        nuestros servicios.
+                    </p>
+                    
+                    <h3 class="fw-bold mb-3 fs-4 text-dark-blue">Nuestra Visión</h3>
+                    <p class="mb-4">
+                        Consolidarnos como un referente logístico en el país y con la mejor
+                        propuesta de valor en transporte para nuestros clientes, innovando a
+                        través de soluciones personalizadas que nos permita crear un
+                        vínculo sólido y a largo plazo.
+                    </p>
+
+                    <a href="{{ url_for('nosotros') }}" class="btn btn-brand mt-2 px-4 shadow-sm about-cta">CONÓCENOS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics Banner Section -->
+<section class="stats-banner text-white section-space py-5" style="background: linear-gradient(rgba(0,32,91, 0.7), rgba(0,32,91, 0.9)), url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?fit=crop&q=80') center/cover;">
+    <div class="container text-center">
+        <h2 class="mb-5 stats-title pb-2 display-6 fw-bold border-bottom border-light mx-auto d-inline-block">¿Por qué contratar R.E.C. SRL?</h2>
+        <div class="row g-4 mt-2 justify-content-center">
+            <!-- Stat 1 -->
+            <div class="col-6 col-md-3">
+                <div class="stat-box p-4 rounded reveal-on-scroll shadow-sm text-center">
+                    <i class="bi bi-box-seam text-white fs-1 mb-3 d-block"></i>
+                    <div class="stat-number fw-bold fs-2 text-white">+ 570</div>
+                    <div class="stat-label small fw-bold mt-2">PAQUETES ENVIADOS</div>
+                </div>
+            </div>
+            <!-- Stat 2 -->
+            <div class="col-6 col-md-3">
+                <div class="stat-box p-4 rounded reveal-on-scroll shadow-sm text-center">
+                    <i class="bi bi-stack text-white fs-1 mb-3 d-block"></i>
+                    <div class="stat-number fw-bold fs-2 text-white">+ 1189</div>
+                    <div class="stat-label small fw-bold mt-2">TRABAJOS REALIZADOS</div>
+                </div>
+            </div>
+            <!-- Stat 3 -->
+            <div class="col-6 col-md-3">
+                <div class="stat-box p-4 rounded reveal-on-scroll shadow-sm text-center">
+                    <i class="bi bi-people-fill text-white fs-1 mb-3 d-block"></i>
+                    <div class="stat-number fw-bold fs-2 text-white">+ 1472</div>
+                    <div class="stat-label small fw-bold mt-2">PERSONAS TRABAJANDO</div>
+                </div>
+            </div>
+            <!-- Stat 4 -->
+            <div class="col-6 col-md-3">
+                <div class="stat-box p-4 rounded reveal-on-scroll shadow-sm text-center">
+                    <i class="bi bi-geo-alt-fill text-white fs-1 mb-3 d-block"></i>
+                    <div class="stat-number fw-bold fs-2 text-white">+ 4150</div>
+                    <div class="stat-label small fw-bold mt-2">KILOMETROS RECORRIDOS</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact section -->
+<section id="contacto" class="section-space contact-section">
+    <div class="container">
+        <div class="section-head text-center mb-5 reveal-on-scroll">
+            <h2>Contacto</h2>
+            <p>Conversemos sobre la mejor solucion de transporte para tu empresa.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-card reveal-on-scroll">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <h4>Oficina Central</h4>
+                            <p>Cochabamba, Bolivia</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Canales directos</h4>
+                            <p>Email: contacto@transport.com.bo</p>
+                            <p>Telefono: +591 76410661</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-brand mt-3" href="https://wa.me/59161615904" target="_blank" rel="noopener noreferrer">Hablar por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

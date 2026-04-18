@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+
+{% block title %}Nosotros | R.E.C. SRL{% endblock %}
+
+{% block content %}
+<!-- Header Nosotros -->
+<header class="page-header d-flex align-items-center justify-content-center text-center">
+    <div class="container position-relative z-1 reveal-on-scroll">
+        <h1 class="display-3 fw-bold text-white mb-0">Nosotros</h1>
+    </div>
+</header>
+
+<!-- Sobre nosotros Section (Ref. Screenshot 1) -->
+<section class="section-space pb-0 bg-white">
+    <div class="container">
+        <div class="row mb-5 justify-content-center">
+            <div class="col-12 text-center reveal-on-scroll">
+                <h2 class="fw-bold d-inline-block position-relative pb-2 mb-0">
+                    Sobre <span class="fw-normal">nosotros</span>
+                    <div class="header-underline"></div>
+                </h2>
+            </div>
+        </div>
+
+        <div class="row align-items-center g-5 justify-content-center">
+            <div class="col-lg-6 col-md-10 reveal-on-scroll">
+                <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&q=80" alt="Equipo logístico" class="img-fluid rounded about-team-img shadow-sm w-100">
+            </div>
+            <div class="col-lg-6 col-md-10 reveal-on-scroll">
+                <div class="ps-lg-3">
+                    <p class="text-dark fw-medium mb-4 fs-6">
+                        Somos una empresa de logística especializada en el transporte de carga completa, 
+                        transporte especial sobredimensionado, mercancías peligrosas y carga suelta a consolidar.
+                    </p>
+                    <p class="text-dark fw-medium mb-4 fs-6">
+                        Pertenecemos a redes de agentes en todo el mundo, que nos permite ofrecer servicios 
+                        de recogida y entrega puerta / puerta de exportación, importación, y también a nivel 
+                        nacional, optimizando así la cadena logística de suministros para nuestros clientes.
+                    </p>
+                    <a href="{{ url_for('servicios') }}" class="btn btn-brand rounded-0 shadow-sm mt-2 px-4 py-2">VISITA NUESTROS SERVICIOS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Misión y Visión Section (Ref. Screenshot 2) -->
+<section class="mission-vision-bg section-space mt-5">
+    <div class="container">
+        <div class="row g-4 justify-content-center pt-5 pb-5">
+            <div class="col-lg-5 col-md-6 reveal-on-scroll">
+                <div class="black-glass-card text-center p-4 p-lg-5 h-100 d-flex flex-column justify-content-center">
+                    <h3 class="text-white fw-bold mb-4">Misión</h3>
+                    <p class="text-light mb-0 small lh-lg">
+                        Fidelizar a nuestros clientes, proveedores y nuestro talento humano, a través de la 
+                        eficiencia, experiencia y capacitación continua, trabajando siempre de forma segura y 
+                        transparente en todos nuestros servicios.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 reveal-on-scroll">
+                <div class="black-glass-card text-center p-4 p-lg-5 h-100 d-flex flex-column justify-content-center">
+                    <h3 class="text-white fw-bold mb-4">Visión</h3>
+                    <p class="text-light mb-0 small lh-lg">
+                        Consolidarnos como un referente logístico en el país y con la mejor propuesta de valor 
+                        en transporte para nuestros clientes, innovando a través de soluciones personalizadas 
+                        que nos permita crear un vínculo sólido y a largo plazo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Valores Section (Ref. Screenshot 2 bottom) -->
+<section class="section-space pb-5 bg-white">
+    <div class="container">
+        <div class="row mb-5 justify-content-center text-center">
+            <div class="col-12 reveal-on-scroll">
+                <h2 class="fw-bold d-inline-block position-relative pb-2 mb-0 mt-5">
+                    Valores de nuestra <br> empresa
+                    <div class="header-underline"></div>
+                </h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center reveal-on-scroll">
+            <div class="col-lg-8">
+                <!-- Bootstrap Accordion styled like screenshot -->
+                <div class="accordion custom-accordion" id="accordionValores">
+                    
+                    <!-- Excelencia -->
+                    <div class="accordion-item mb-3 border-0 bg-light">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed bg-transparent text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <i class="bi bi-award fs-5 text-accent me-3"></i> Excelencia
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionValores">
+                            <div class="accordion-body text-muted small bg-white border border-top-0">
+                                Buscamos siempre el mayor estándar de calidad en cada eslabón de la cadena logística, logrando una excelencia operativa.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cuidado y seguridad -->
+                    <div class="accordion-item mb-3 border-0 bg-light">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed bg-transparent text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="bi bi-shield-lock-fill fs-5 text-accent me-3"></i> Cuidado y seguridad
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionValores">
+                            <div class="accordion-body text-muted small bg-white border border-top-0">
+                                Tus mercancías están en manos seguras. Cumplimos rigurosamente los protocolos internacionales en cada envío.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Integridad -->
+                    <div class="accordion-item mb-3 border-0 bg-light">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed bg-transparent text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="bi bi-handshake fs-5 text-accent me-3"></i> Integridad
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionValores">
+                            <div class="accordion-body text-muted small bg-white border border-top-0">
+                                Transparencia y ética en nuestras operaciones y comunicación constante hacia nuestros usuarios.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mejora continua -->
+                    <div class="accordion-item mb-3 border-0 bg-light">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed bg-transparent text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="bi bi-graph-up-arrow fs-5 text-accent me-3"></i> Mejora continua
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionValores">
+                            <div class="accordion-body text-muted small bg-white border border-top-0">
+                                Innovamos nuestros procesos, renovamos nuestra flota e implementamos tecnología de punta año con año.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trabajo en equipo -->
+                    <div class="accordion-item mb-4 border-0 bg-light">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button bg-light-accent text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                <i class="bi bi-people-fill fs-5 text-accent me-3"></i> Trabajo en equipo
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionValores">
+                            <div class="accordion-body text-dark small bg-white">
+                                El trabajo en equipo es uno de los factores clave de nuestro éxito, el cual exige sólidos vínculos, tanto internos como con nuestros clientes.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
