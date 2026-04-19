@@ -30,10 +30,13 @@ def create_app() -> Flask:
 
 app = create_app()
 
+import os
+
 # Configuración recomendada para producción en Render (servir archivos estáticos con WhiteNoise)
 try:
     from whitenoise import WhiteNoise
-    app.wsgi_app = WhiteNoise(app.wsgi_app, root='static/', prefix='static/')
+    static_path = os.path.join(os.path.dirname(__file__), 'static')
+    app.wsgi_app = WhiteNoise(app.wsgi_app, root=static_path, prefix='static/')
 except ImportError:
     pass
 

@@ -197,13 +197,17 @@ h4,
 
 .service-img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     border-radius: 0;
 }
 
 .bg-primary-red {
     background-color: var(--accent);
+}
+
+.bg-accent {
+    background-color: var(--accent) !important;
 }
 
 .about-section {
@@ -216,8 +220,8 @@ h4,
 }
 
 .about-huge-img {
-    object-fit: cover;
-    height: 450px;
+    object-fit: contain;
+    height: auto;
 }
 
 /* ========================================================================= */
@@ -262,8 +266,8 @@ h4,
 
 /* ABOUT US (NOSOTROS.HTML) */
 .about-team-img {
-    height: 400px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
 }
 
 .mission-vision-bg {
@@ -321,9 +325,9 @@ h4,
 }
 
 .service-image-wrapper img {
-    height: 380px;
+    height: auto;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .service-icon-floating {
